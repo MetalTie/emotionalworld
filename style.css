@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    background-color: maroon;
+    color: black;
+    padding: 20px;
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+#slide{
+    background-image: linear-gradient(red maroon);
+}
+#bio{
+    background-color: red;
+}
+footer{
+    background-color: black;
+    color: white;
+}
