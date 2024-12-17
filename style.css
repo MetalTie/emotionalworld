@@ -29,11 +29,29 @@ header{
         }
     }
 }
-#slide{
-    background-image: linear-gradient(red maroon);
+.presentation{
+    background-image: -webkit-linear-gradient(left, red, maroon);
+    padding: 20px;
+    #slide{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        div{
+            background-color: blue;
+
+        }
+    }
 }
 #bio{
-    background-color: red;
+    background-image: url(images/Eworld.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+
+    padding: 20px 20%;
+    h1, p{
+        text-align: center;
+    }
 }
 footer{
     background-color: black;
