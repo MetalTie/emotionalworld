@@ -2,58 +2,77 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+
+.sidebar{
+    background-image: -webkit-linear-gradient(bottom, maroon, red, maroon);
+    color: black;
+    
+    /* The size of the sidebar */
+    height: 100%;
+    width: 160px;
+
+    /* The text will be centered in the sidebar with equal space around */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-header{
-    background-color: maroon;
-    color: black;
-    padding: 20px;
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        ul{
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            list-style: none;
-            li{
-                a{
-                    text-decoration: none;
-                    color: black;
-                }
-            }
-        }
+    justify-content: space-around;
+
+    /* This allow the sidebar to stick to the side. */
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+    /* Remove the link decoration */
+    a{
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        display: block;
     }
 }
 .presentation{
     background-image: -webkit-linear-gradient(left, red, maroon);
+    
     padding: 20px;
-    #slide{
+
+    height: 100vh; /* The presentation will take up the device screen */
+    margin-left: 160px; /* Same width of the sidebar */
+    section{
+        background-color: black;
+        opacity: 60%;
+        /* Both cells will aligned and spaced between each other */
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         div{
-            background-color: blue;
-
+            background-color: blue; /* To show the outline */
+            padding: 20px;
         }
     }
 }
-#bio{
+.bio{
+    padding: 0px 100px;
+    text-align: center;
+    p, h1{
+        margin-left: 160px;
+    }
+    
+
+}
+    
+/* #bio{
     background-image: url(images/Eworld.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
 
 
     padding: 20px 20%;
-    h1, p{
-        text-align: center;
-    }
-}
+} */
 footer{
     background-color: black;
     color: white;
+    margin-left: 160px;
+    padding: 0px 10px;
 }
