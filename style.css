@@ -1,78 +1,54 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-
-
-.sidebar{
-    background-image: -webkit-linear-gradient(bottom, maroon, red, maroon);
-    color: black;
-    
-    /* The size of the sidebar */
-    height: 100%;
-    width: 160px;
-
-    /* The text will be centered in the sidebar with equal space around */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    /* This allow the sidebar to stick to the side. */
-    position: fixed;
-    overflow-x: hidden;
-    top: 0;
-    left: 0;
-
-    text-align: center;
-    /* Remove the link decoration */
-    a{
-        padding: 20px;
-        text-decoration: none;
-        color: black;
-        display: block;
-    }
-}
-.presentation{
-    background-image: -webkit-linear-gradient(left, red, maroon);
-    
-    padding: 20px;
-
-    height: 100vh; /* The presentation will take up the device screen */
-    margin-left: 160px; /* Same width of the sidebar */
-    section{
-        background-color: black;
-        opacity: 60%;
-        /* Both cells will aligned and spaced between each other */
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        div{
-            background-color: blue; /* To show the outline */
-            padding: 20px;
-        }
-    }
-}
-.bio{
-    padding: 0px 100px;
-    text-align: center;
-    p, h1{
-        margin-left: 160px;
-    }
-    
-
-}
-    
-/* #bio{
-    background-image: url(images/Eworld.jpg);
-    background-size: auto 100%;
+body{
+    font-family: monospace;
+    background-color: maroon;
+    background-image: url(images/Eworld_earth_logo.PNG);
+    background-attachment: fixed;
     background-repeat: no-repeat;
-
-
-    padding: 20px 20%;
-} */
-footer{
-    background-color: black;
+    background-position: center;
+    background-size: 25%;
+}
+nav{
+    position:sticky;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(0, 0, 0, 0.5);
     color: white;
-    margin-left: 160px;
-    padding: 0px 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    button{
+        cursor: alias;
+        background-color: maroon;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+    h1{
+        margin-bottom: 10%;
+        font-size: 100px;
+    }
+}
+
+section{
+    height: 100vh;
+    margin: 0 200px;
+    background-color: #373636;
+    opacity: 50%;
+    margin-bottom: 100px;
+}
+footer{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0px;
 }
